@@ -1,0 +1,19 @@
+<div class="container">
+    <label>Username</label>
+    <input
+    type="text"
+    class="form-control"
+    [(ngModel)]="username">
+    <p>Username is: {{username}}</p>
+</div>
+<div class="container">
+<button class="btn btn-primary"
+[disabled]="username === ''"
+(click)="onSubmit(); reset()"
+
+
+
+>Submit</button>
+
+<p>{{ usernameStatus }}</p>
+</div>
